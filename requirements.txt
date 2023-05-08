@@ -1,0 +1,10 @@
+Dnspython
+Motor
+Pyrogram
+Pymongo
+Requests 
+TgCrypto
+telegraph
+Flask
+gunicorn
+aiohttp
