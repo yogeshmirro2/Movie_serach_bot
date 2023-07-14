@@ -68,7 +68,7 @@ async def auto_filter(bot, update):
             file_type = filter.get("file_type")
             file_link = filter.get("file_link")
             file_size = int(filter.get("file_size", "0"))
-            
+            file_caption = filter.get("file_caption")
             # from B to MiB
             
             if file_size < 1024:
@@ -84,7 +84,7 @@ async def auto_filter(bot, update):
             file_size = "" if file_size == ("[0 B]") else file_size
             
             # add emoji down below inside " " if you want..
-            button_text = f"{file_size}:{file_name}"
+            button_text = f"{file_size}:{file_caption}"
             
 
             if file_type == "video":
